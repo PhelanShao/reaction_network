@@ -49,7 +49,7 @@ pip install numpy scipy matplotlib networkx rdkit-pypi pillow cryptography
 
 ### Step 1: Authentication
 - Launch the application
-- Enter the required password when prompted
+- Enter the required password (github.com/PhelanShao/reaction_network) when prompted
 - Review citation requirements
 
 ![演示动画](https://github.com/PhelanShao/reaction_network/blob/main/reacnet/reacnet1.png)
