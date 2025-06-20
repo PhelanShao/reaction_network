@@ -10,6 +10,10 @@
 
 ReacNet Analyzer Pro is a comprehensive software solution designed for computational chemists and researchers to visualize, analyze, and interpret complex reaction networks. Built with modern GUI frameworks and equipped with advanced molecular rendering capabilities, it transforms raw reaction data into interactive, publication-ready visualizations.
 
+![演示动画](https://github.com/PhelanShao/reaction_network/blob/main/reacnet/demo2.gif)
+![演示动画](https://github.com/PhelanShao/reaction_network/blob/main/reacnet/demo3.gif)
+
+
 ### ✨ Key Features
 
 - **🔬 Advanced Molecular Visualization**: High-quality 3D and 2D molecular structure rendering
@@ -48,9 +52,13 @@ pip install numpy scipy matplotlib networkx rdkit-pypi pillow cryptography
 - Enter the required password when prompted
 - Review citation requirements
 
+![演示动画](https://github.com/PhelanShao/reaction_network/blob/main/reacnet/reacnet1.png)
+
 ### Step 2: File Selection
 - **Browse**: Use the "Browse Files" button to select your input file(*.reacnet)
 - **Supported Formats**: `.reacnet` encrypted reaction network files
+
+- ![演示动画](https://github.com/PhelanShao/reaction_network/blob/main/reacnet/reacnet2.png)
 
 ### Step 3: Configuration
 | Setting | Options | Description |
@@ -70,21 +78,6 @@ pip install numpy scipy matplotlib networkx rdkit-pypi pillow cryptography
 - **Molecular Images**: High-quality 3D/2D structure visualizations
 - **Energy Profiles**: MEP analysis and pathway energetics
 - **Network Data**: Topology and connectivity information
-
-## 🔧 Advanced Configuration
-
-### Custom Settings
-
-```python
-# Example configuration options
-settings = {
-    "render_mode": "3d",        # 3d, 2d, both
-    "output_format": "svg",     # png, svg
-    "image_quality": "high",    # low, medium, high
-    "energy_analysis": True,    # Include MEP data
-    "filter_ts": True          # Filter transition states
-}
-```
 
 ## 📊 File Formats & Data Structures
 
@@ -128,15 +121,6 @@ output_directory/
 - **Graphics**: Dedicated GPU with 1GB VRAM
 - **CPU**: Multi-core processor (Intel i5/AMD Ryzen 5 or better)
 
-### Software Dependencies (for Python version)
-- Python 3.8+
-- NumPy ≥ 1.19
-- SciPy ≥ 1.5
-- Matplotlib ≥ 3.3
-- NetworkX ≥ 2.5
-- RDKit ≥ 2020.09 (optional, for 2D rendering)
-- Pillow ≥ 8.0
-- Cryptography ≥ 3.0
 
 ## 📚 Citation Requirements
 
@@ -154,36 +138,6 @@ When using ReacNet Analyzer in your research, please cite:
   doi={[DOI]}
 }
 ```
-
-### Additional References
-Please also cite the underlying methodologies and tools:
-- **RDKit**: For 2D molecular visualization
-- **NetworkX**: For graph analysis algorithms
-- **Matplotlib**: For plotting and rendering
-- **Original ReacNet methodology**: [Original paper citations]
-
-**Problem**: Large files cause memory errors
-```
-Solution:
-1. Increase system RAM
-2. Close other applications
-3. Process smaller subsets
-4. Use 64-bit Python version
-```
-
-### Performance Optimization
-
-**For Large Networks:**
-- Use PNG format for faster processing
-- Disable 2D rendering if not needed
-- Process in smaller batches
-- Ensure sufficient disk space
-
-**For High Quality Output:**
-- Use SVG format for publications
-- Enable both 3D and 2D rendering
-- Increase image resolution settings
-- Verify font availability
 
 ---
 
